@@ -17,8 +17,8 @@ namespace EmployeePayslipModel.Models
         [Range(0, int.MaxValue)]
         public int AnnualSalary { get; set; }
 
-        [Display(Name = "Super Rate"), Required(ErrorMessage = "Super rate is required")]
-        [Range(0, 12, ErrorMessage = "Enter Super rate between 0 to 12")]
+        [Required]
+        [Range(0, 12)]
         public int SuperRate { get; set; }
 
        
