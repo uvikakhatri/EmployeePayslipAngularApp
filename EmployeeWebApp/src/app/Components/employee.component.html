@@ -1,0 +1,73 @@
+
+<a href="javascript:void(0)" (click)="CreateNew()">Create New</a>
+<form *ngIf="!viewPayslip" class="form-horizontal" [formGroup]="form">
+  <h4>Enter Employee Details</h4>
+  <hr />
+
+
+  <div class="form-group">
+    <label class="control-label col-md-2">First Name</label>
+
+    <div class="col-md-10">
+      <input class="form-control" type="text" placeholder="" maxlength="50" formControlName="FirstName" [(ngModel)]="employee.FirstName">
+      <div *ngIf="form.controls.FirstName.errors">
+        <p *ngIf="form.controls.FirstName.errors.required">First Name is required</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-2">Last Name</label>
+
+    <div class="col-md-10">
+      <input class="form-control" type="text" placeholder="" maxlength="50" formControlName="LastName" [(ngModel)]="employee.LastName">
+      <div *ngIf="form.controls.LastName.errors">
+        <p *ngIf="form.controls.LastName.errors.required">Last Name is required</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-2">Annual Salary</label>
+
+    <div class="col-md-10">
+      <input class="form-control" type="number" inputNumber [isDecimal]="false"  min="0" formControlName="AnnualSalary" [(ngModel)]="employee.AnnualSalary">
+      <div *ngIf="form.controls.AnnualSalary.errors">
+        <p *ngIf="form.controls.AnnualSalary.errors.required">Annual Salary is required</p>
+        <p *ngIf="form.controls.AnnualSalary.errors.incorrect">Enter valid Annual Salary(Positive Number)</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-2">Super Rate</label>
+
+    <div class="col-md-10">
+      <input type="number" inputNumber [isDecimal]="false"  min="0"   class="form-control"  formControlName="SuperRate" [(ngModel)]="employee.SuperRate">
+      <div *ngIf="form.controls.SuperRate.errors">
+        <p *ngIf="form.controls.SuperRate.errors.required">Super Rate is required</p>
+        <p *ngIf="form.controls.SuperRate.errors.incorrect">Enter valid rate(between 0 to 12)</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-2">Start Date</label>
+
+    <div class="col-md-10">
+      <!--<input class="form-control" type="text" placeholder="" formControlName="StartDate" [(ngModel)]="Semployee.StartDate">-->
+      <my-date-picker [(ngModel)]="startDate" [options]="dateOptions" formControlName="StartDate" class="form-control">
+      </my-date-picker>
+      <div *ngIf="form.controls.StartDate.errors" class="text-danger">
+        <p *ngIf="form.controls.StartDate.errors.required">Start Date is required</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+      <input type="submit" value="Generate Payslip" class="btn btn-default" (click)="generatePayslip()" />
+    </div>
+  </div>
+</form>
+
+<pay-slip *ngIf="viewPayslip"  [payslip]="payslip" (showEmployee)="showEmployee()"></pay-slip>
+
+
+

@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayslipWebAPI", "EmployeePayslipWebAPI\EmployeePayslipWebAPI.csproj", "{82681211-546E-4679-BDFB-1739AB6BE303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayslipContracts", "EmployeePayslipContracts\EmployeePayslipContracts.csproj", "{063E00AC-0692-4B94-98C4-88BF83A528F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayslipModel", "EmployeePayslipModel\EmployeePayslipModel.csproj", "{05AE98C1-B16C-4423-93BE-9D482A7629F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayslipUnitTestProject", "EmployeePayslipUnitTestProject\EmployeePayslipUnitTestProject.csproj", "{BE09073A-6422-4798-96C0-7A8CF857F4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayslipBuisness", "EmployeePayslipBuisness\EmployeePayslipBuisness.csproj", "{C6FE3DDE-3063-4686-8DA1-E438F46E6446}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EmployeeWebApp", "EmployeeWebApp", "{7A5D7695-7731-428B-A9B4-95B20F03F9DA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53296"
+		Debug.AspNetCompiler.PhysicalPath = "EmployeeWebApp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53296\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53296"
+		Release.AspNetCompiler.PhysicalPath = "EmployeeWebApp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53296\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53296"
+		SlnRelativePath = "EmployeeWebApp\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82681211-546E-4679-BDFB-1739AB6BE303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82681211-546E-4679-BDFB-1739AB6BE303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82681211-546E-4679-BDFB-1739AB6BE303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82681211-546E-4679-BDFB-1739AB6BE303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063E00AC-0692-4B94-98C4-88BF83A528F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063E00AC-0692-4B94-98C4-88BF83A528F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063E00AC-0692-4B94-98C4-88BF83A528F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063E00AC-0692-4B94-98C4-88BF83A528F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05AE98C1-B16C-4423-93BE-9D482A7629F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05AE98C1-B16C-4423-93BE-9D482A7629F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05AE98C1-B16C-4423-93BE-9D482A7629F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05AE98C1-B16C-4423-93BE-9D482A7629F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE09073A-6422-4798-96C0-7A8CF857F4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE09073A-6422-4798-96C0-7A8CF857F4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE09073A-6422-4798-96C0-7A8CF857F4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE09073A-6422-4798-96C0-7A8CF857F4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FE3DDE-3063-4686-8DA1-E438F46E6446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FE3DDE-3063-4686-8DA1-E438F46E6446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FE3DDE-3063-4686-8DA1-E438F46E6446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FE3DDE-3063-4686-8DA1-E438F46E6446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A5D7695-7731-428B-A9B4-95B20F03F9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5D7695-7731-428B-A9B4-95B20F03F9DA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5D7695-7731-428B-A9B4-95B20F03F9DA}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8ED737A-F6C1-483B-9D0B-1B17E9153DD0}
+	EndGlobalSection
+EndGlobal
