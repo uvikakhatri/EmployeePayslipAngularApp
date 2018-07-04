@@ -40,5 +40,8 @@ table, th, td {
   table td.first {
     text-decoration: solid
   }
-
+.mydp, .mydp .headertodaybtn
+{
+  max-width:175px;
+}
 
